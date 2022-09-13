@@ -205,7 +205,7 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            {/* <StyledImg alt={"example"} src={"/config/images/example.gif"} /> */}
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -216,7 +216,7 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              // border: "4px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
@@ -371,11 +371,11 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
+            {/* <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
-            />
+            /> */}
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
@@ -386,9 +386,10 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            <p>Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME}) and the correct address. </p>
+            <p>Please note:
+            Once you make the purchase, you cannot undo this action.</p>
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
