@@ -10,17 +10,22 @@ const truncate = (input, len) =>
 
 export const StyledButton = styled.button`
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
+  font-size: 18px;
   color: var(--secondary-text);
-  width: 100px;
+  width: 20%;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  :hover {
+    background-color: var(--accent-text);
+    color: var(--primary-text);
+  }
   :active {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -145,7 +150,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! Go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -201,7 +206,7 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        <a href="https://aitomaton.io"><StyledLogo alt={"logo"} src={"/config/images/logo.png"} /></a>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -214,8 +219,8 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
-              borderRadius: 24,
+              padding: 20,
+              borderRadius: 15,
               // border: "4px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
@@ -246,7 +251,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  The sale has ended.
+                  The mint has ended
                 </s.TextTitle>
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -270,7 +275,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  excluding gas fees
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -310,6 +315,8 @@ function App() {
                   </s.Container>
                 ) : (
                   <>
+                    <s.SpacerMedium />
+
                     <s.TextDescription
                       style={{
                         textAlign: "center",
@@ -350,7 +357,7 @@ function App() {
                         +
                       </StyledRoundButton>
                     </s.Container>
-                    <s.SpacerSmall />
+                    <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
                         disabled={claimingNft ? 1 : 0}
@@ -360,7 +367,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                        {claimingNft ? "BUSY" : "MINT"}
                       </StyledButton>
                     </s.Container>
                   </>
