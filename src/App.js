@@ -138,7 +138,7 @@ function App() {
       .mint(blockchain.account, mintAmount)
       .send({
 //Changed to gasLimit from totalGasLimit
-        gasLimit: String(gasLimit),
+        gasLimit: String(totalGasLimit),
        to: CONFIG.CONTRACT_ADDRESS,
        from: blockchain.account,
        value: totalCostWei,
