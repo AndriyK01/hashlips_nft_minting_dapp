@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0xAE5AA520B996bab41D35c5Cb74111C8Ce61F54Fd",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xAE5AA520B996bab41D35c5Cb74111C8Ce61F54Fd",
+  "CONTRACT_ADDRESS": "0xbcE828f93a5C45b704Dae7DC709F6cde15e6851F",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xbcE828f93a5C45b704Dae7DC709F6cde15e6851F",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -9,8 +9,8 @@
   "NFT_NAME": "AiTOMATON",
   "SYMBOL": "AITMTN",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 10000000000000000,
-  "DISPLAY_COST": 0.01,
+  "WEI_COST": 150000000000000000,
+  "DISPLAY_COST": 0.15,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/aitomaton2",
