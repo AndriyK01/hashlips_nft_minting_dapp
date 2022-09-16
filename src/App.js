@@ -285,7 +285,7 @@ function App() {
                     <s.TextDescription
                       style={{
                         textAlign: "center",
-                        color: "var(--accent-text)",
+                        color: "var(--primary-text)",
                       }}
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
@@ -306,7 +306,7 @@ function App() {
                         <s.TextDescription
                           style={{
                             textAlign: "center",
-                            color: "var(--accent-text)",
+                            color: "var(--primary-text)",
                           }}
                         >
                           {blockchain.errorMsg}
@@ -321,7 +321,7 @@ function App() {
                     <s.TextDescription
                       style={{
                         textAlign: "center",
-                        color: "var(--accent-text)",
+                        color: "var(--primary-text)",
                       }}
                     >
                       {feedback}
