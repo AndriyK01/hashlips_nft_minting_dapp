@@ -19,7 +19,7 @@
   "author": "AK01",
   "license": "MIT",
   "engine":{
-    "node": "18.x"
+    "node": "17.x"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
