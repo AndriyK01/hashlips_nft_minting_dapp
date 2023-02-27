@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0xcbbB80169eD18bE332B0c7f1B0d5B053c136F77F",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xcbbb80169ed18be332b0c7f1b0d5b053c136f77f",
+  "CONTRACT_ADDRESS": "0x6F3b34E544b4cFa0A28D4b43486285EDF5985f61",
+  "SCAN_LINK": "https://polygonscan.com/address/0x6f3b34e544b4cfa0a28d4b43486285edf5985f61",
   "NETWORK": {
-    "NAME": "Polygon Testnet",
+    "NAME": "Polygon Mainnet",
     "SYMBOL": "MATIC",
-    "ID": 80001
+    "ID": 137
   },
   "NFT_NAME": "AiTOMATON",
   "SYMBOL": "AITMTN",
   "MAX_SUPPLY": 3310,
-  "WEI_COST": 40000000000000000000,
-  "DISPLAY_COST": 4,
+  "WEI_COST": 5000000000000000000,
+  "DISPLAY_COST": 5,
   "GAS_LIMIT": 200000,
   "MARKETPLACE": "",
   "MARKETPLACE_LINK": "",
