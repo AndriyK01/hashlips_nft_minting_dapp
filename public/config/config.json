@@ -12,7 +12,7 @@
   "WEI_COST": 5000000000000000000,
   "DISPLAY_COST": 5,
   "GAS_LIMIT": 200000,
-  "MARKETPLACE": "",
-  "MARKETPLACE_LINK": "",
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/aitomaton-mint-pass",
   "SHOW_BACKGROUND": true
 }
