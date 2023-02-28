@@ -1,13 +1,13 @@
 {
-  "CONTRACT_ADDRESS": "0x6F3b34E544b4cFa0A28D4b43486285EDF5985f61",
-  "SCAN_LINK": "https://polygonscan.com/address/0x6f3b34e544b4cfa0a28d4b43486285edf5985f61",
+  "CONTRACT_ADDRESS": "0x79df3AC3B6ADeE61dd11864209efC6CfD298C38b",
+  "SCAN_LINK": "https://polygonscan.com/address/0x79df3AC3B6ADeE61dd11864209efC6CfD298C38b",
   "NETWORK": {
     "NAME": "Polygon Mainnet",
     "SYMBOL": "MATIC",
     "ID": 137
   },
   "NFT_NAME": "AiTOMATON",
-  "SYMBOL": "AITMTN",
+  "SYMBOL": "AITMNTN",
   "MAX_SUPPLY": 3300,
   "WEI_COST": 5000000000000000000,
   "DISPLAY_COST": 5,

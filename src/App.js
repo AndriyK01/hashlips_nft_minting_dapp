@@ -209,10 +209,14 @@ function App() {
       >
         <a href="https://aitomaton.io"><StyledLogo alt={"logo"} src={"/config/images/logo.png"} /></a>
         <s.SpacerSmall />
+        <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: 30
+                }}
+                >
+                  MINT PASSES
+                </s.TextTitle>
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            {/* <StyledImg alt={"example"} src={"/config/images/example.gif"} /> */}
-          </s.Container>
+          
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -222,10 +226,14 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 20,
               borderRadius: 15,
-              // border: "4px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
+            <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  MINTED / TOTAL
+                </s.TextTitle>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -358,7 +366,7 @@ function App() {
                         +
                       </StyledRoundButton>
                     </s.Container>
-                    <s.SpacerMedium />
+                    <s.SpacerLarge />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
                         disabled={claimingNft ? 1 : 0}
@@ -378,12 +386,27 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            {/* <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            /> */}
+          <s.Container
+            flex={2}
+            jc={"center"}
+            ai={"center"}
+            style={{
+              backgroundColor: "var(--accent)",
+              padding: 20,
+              borderRadius: 15,
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+            }}
+          >
+            <s.SpacerLarge />
+            <s.Container jc={"center"} ai={"center"} style={{ width: "90%" }}>
+              <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                Need to exchange ETH to MATIC?
+              </s.TextTitle>
+              <s.SpacerMedium />
+              <iframe width="100%" height="400px" frameborder='none' allow="camera" src="https://widget.changelly.com?from=eth&to=maticpolygon&amount=0.1&address=&fromDefault=eth&toDefault=maticpolygon&merchant_id=NkM7jOBg8LZ0R6QB&payment_id=&v=3">Can't load widget</iframe>
+            </s.Container>
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
@@ -396,8 +419,7 @@ function App() {
           >
             <p>Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME}) and the correct address. </p>
-            <p>Please note:
-            Once you make the purchase, you cannot undo this action.</p>
+            <p></p>
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -406,9 +428,7 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            These Mint Passes Grant Whitelist Plus No Less Than 10 Matic Discount For The PFP Mint
           </s.TextDescription>
         </s.Container>
       </s.Container>
