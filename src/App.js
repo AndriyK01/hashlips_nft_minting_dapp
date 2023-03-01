@@ -137,12 +137,12 @@ function App() {
     blockchain.smartContract.methods
       .mint(blockchain.account, mintAmount)
       .send({
-//Changed to gasLimit from totalGasLimit
-       gasLimit: String(totalGasLimit),
-       to: CONFIG.CONTRACT_ADDRESS,
-       from: blockchain.account,
-       value: totalCostWei,
-       })
+        //Changed to gasLimit from totalGasLimit
+        gasLimit: String(totalGasLimit),
+        to: CONFIG.CONTRACT_ADDRESS,
+        from: blockchain.account,
+        value: totalCostWei,
+      })
       .once("error", (err) => {
         console.log(err);
         setFeedback("Sorry, something went wrong please try again later.");
@@ -210,13 +210,22 @@ function App() {
         <a href="https://aitomaton.io"><StyledLogo alt={"logo"} src={"/config/images/logo.png"} /></a>
         <s.SpacerSmall />
         <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: 30
-                }}
-                >
-                  MINT PASSES
-                </s.TextTitle>
+          style={{
+            textAlign: "center", color: "var(--accent-text)", fontSize: 30
+          }}
+        >
+          MINT PASSES
+        </s.TextTitle>
+        <s.TextDescription
+          style={{
+            textAlign: "center",
+            color: "var(--primary-text)",
+          }}
+        >
+          These Mint Passes Grant Whitelist Plus No Less Than 10 Matic Discount For The PFP Mint
+        </s.TextDescription>
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          
+
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -230,10 +239,10 @@ function App() {
             }}
           >
             <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  MINTED / TOTAL
-                </s.TextTitle>
+              style={{ textAlign: "center", color: "var(--accent-text)" }}
+            >
+              MINTED / TOTAL
+            </s.TextTitle>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -288,7 +297,7 @@ function App() {
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
+                  blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
@@ -400,8 +409,8 @@ function App() {
             <s.SpacerLarge />
             <s.Container jc={"center"} ai={"center"} style={{ width: "90%" }}>
               <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
+                style={{ textAlign: "center", color: "var(--accent-text)" }}
+              >
                 Need to exchange ETH to MATIC?
               </s.TextTitle>
               <s.SpacerMedium />
@@ -418,18 +427,11 @@ function App() {
             }}
           >
             <p>Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME}) and the correct address. </p>
+              {CONFIG.NETWORK.NAME}) and the correct address. </p>
             <p></p>
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            These Mint Passes Grant Whitelist Plus No Less Than 10 Matic Discount For The PFP Mint
-          </s.TextDescription>
+
         </s.Container>
       </s.Container>
     </s.Screen>
